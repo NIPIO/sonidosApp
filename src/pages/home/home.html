@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="dark" style='text-align: center' >
+    <ion-title>
+      Sonidos APP
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="divContenedor">
+    <div *ngFor='let paginas of divs' (click)='pushPage(paginas)' class="estiloDiv" ngClass='{{paginas}}'>
+      <div >
+        <span>{{paginas}}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer> 
+  <div>
+  Desarrollado por Nicolas Piovano
+    
+  </div>
+</ion-footer> 
